@@ -1,9 +1,11 @@
-import Link from "next/link";
+import BigImage from "@/app/components/BigImage";
+import Details from "@/app/components/Details";
+
 const DetailView = () => {
   return (
     <>
-      <h1>DetailView</h1>
-      <Link href="/">Back to ListView</Link>
+      <BigImage src="/dummydog.jpg" name="Lorem Ipsum" />
+      <Details />
     </>
   );
 };

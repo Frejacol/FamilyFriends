@@ -1,4 +1,6 @@
 "use server";
+import { revalidatePath } from "next/cache";
+
 export const addFavorite = async (id) => {
   const response = await fetch("https://api.thedogapi.com/v1/favourites", {
     method: "POST",
@@ -10,5 +12,6 @@ export const addFavorite = async (id) => {
       image_id: id,
     }),
   });
-  console.log("response", response);
+
+  revalidatePath("/");
 };

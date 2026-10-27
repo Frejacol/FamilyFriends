@@ -17,7 +17,7 @@ const Breedcards = async ({ query }) => {
   return (
     <div className="grid grid-cols-2 gap-4 px-5 py-2">
       {breeds.map((breed) => (
-        <BreedCard name={breed.name} country={breed.origin} image={breed.image?.url} key={breed.id} id={breed.id} />
+        <BreedCard name={breed.name} country={breed.origin} image={breed.image?.url} key={breed.id} id={breed.id} favoriteID={breed.image.id} />
       ))}
     </div>
   );

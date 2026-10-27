@@ -6,7 +6,7 @@ const variants = {
 };
 
 const Tag = ({ children, variant = "blue" }) => {
-  return <span className={`inline-block rounded-full px-4 py-2 text-base text-[#6B7F3A] ${variants[variant]}`}>{children}</span>;
+  return <span className={`inline-block rounded-full px-4 py-2 text-base text-[#6B7F3A] capitalize ${variants[variant]}`}>{children}</span>;
 };
 
 export default Tag;

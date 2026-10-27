@@ -3,7 +3,7 @@ import Tag from "./Tag";
 const colors = ["blue", "pink", "green", "yellow"];
 
 const Traits = ({ temperament }) => {
-  const traits = temperament.split(", ").slice(0, 4);
+  const traits = temperament.split(", ").slice(0, 10);
 
   return (
     <div className="flex flex-wrap gap-3 pt-4">
